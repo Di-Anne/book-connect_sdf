@@ -3,6 +3,7 @@
 }
 
 :root {
+    --border-radius: 8px;
     --grid-background: #f0f8ff;
     --card-background: #ffffff;
     --card-border-color: #ddd;
@@ -11,9 +12,12 @@
     --card-title-color: #2c3e50;
     --card-author-color: #8e44ad;
     --card-info-color: #7f8c8d;
+    --card-button-background: rgb(81, 121, 232);
 }
-/*Media query that enables user to change system preference theme to dark mode with pure CSS*/
-@media (prefers-color-scheme: dark){  
+
+/***Media query that enables user to change system preference theme to dark mode with pure CSS***/
+
+/*@media (prefers-color-scheme: dark){  
     :root {
     --grid-background:#414141;
     --card-background: #202020;
@@ -24,8 +28,7 @@
     --card-author-color: #8e44ad;
     --card-info-color: #7f8c8d;
     }
-}
-
+}*/
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -44,7 +47,6 @@ body {
     margin: 0 auto;
     background: var(--grid-background);
     box-shadow: 0 4px 8px var(--box-shadow);
-    border-radius: 8px;
 }
 
 .book-card {
@@ -67,23 +69,32 @@ body {
     width: 100%; /*Image will take 100% of its container Div*/
     height: 300px; /*fixed height for all book-card images, for professionalism*/
     object-fit: cover; /*Ensures the image fits the container while preserving aspect ratio and cropped it where necessary for no empty spaces*/
+    border-radius: 8px;
     border-bottom: 1px solid var(--card-border-color); /*to seperate the image form the rest of the card, for image to stand out*/
 }
 
 .book-card .book-title {
     color: var(--card-title-color);
-    font-size: 1.2rem;
     margin: 10px 0;
 }
 
 .book-card .book-author {
     color: var(--card-author-color);
-    font-size: 1rem;
-    margin: 5px 0;
+    font-size: 0.8rem;
+    margin: 20px 0;
 }
 
 .book-card .book-info {
     font-size: 0.9rem;
     color: var(--card-info-color);
-    margin: 5px 0;
+    margin: 10px 0;
+}
+
+.book-button {
+    font-size: 0.8rem;
+    font-weight: 550;
+    border: none;
+    background-color: var(--card-button-background);
+    border-radius: 5px;
+    padding: 1em 2em;
 }
