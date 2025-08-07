@@ -1,9 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --grid-background: #f0f8ff;
+    --card-background: #ffffff;
+    --card-border-color: #ddd;
+    --box-shadow: rgba(0, 0, 0, 0.1);
+    --body-text-color: #333;
+    --card-title-color: #2c3e50;
+    --card-author-color: #8e44ad;
+    --card-info-color: #7f8c8d;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
-    color: #333;
+    color: var(--body-text-color);
 }
 
 .book-grid {
@@ -13,18 +28,18 @@ body {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    background: #f0f8ff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: var(--grid-background);
+    box-shadow: 0 4px 8px var(--box-shadow);
     border-radius: 8px;
 }
 
 .book-card {
-    background: #ffffff;
-    border: 1px solid #ddd;
+    background: var(--card-background);
+    border: 1px solid var(--card-border-color);
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*a-value stands for opacity. The lower the value, the more transparent*/
+    box-shadow: 0 2px 4px var(--box-shadow); /*a-value stands for opacity. The lower the value, the more transparent*/
     transition: transform 0.2s, box-shadow 0.2s;
     padding: 15px;
 }
@@ -38,29 +53,23 @@ body {
     width: 100%; /*Image will take 100% of its container Div*/
     height: 300px; /*fixed height for all book-card images, for professionalism*/
     object-fit: cover; /*Ensures the image fits the container while preserving aspect ratio and cropped it where necessary for no empty spaces*/
-    border-bottom: 1px solid #ddd; /*to seperate the image form the rest of the card, for image to stand out*/
+    border-bottom: 1px solid var(--card-border-color); /*to seperate the image form the rest of the card, for image to stand out*/
 }
 
 .book-card .book-title {
-    color: #2c3e50;
+    color: var(--card-title-color);
     font-size: 1.2rem;
     margin: 10px 0;
 }
 
 .book-card .book-author {
-    color: #8e44ad;
+    color: var(--card-author-color);
     font-size: 1rem;
     margin: 5px 0;
 }
 
 .book-card .book-info {
     font-size: 0.9rem;
-    color: #7f8c8d;
-    margin: 5px 0;
-}
-
-.book-card .book-date {
-    font-size: 0.9rem;
-    color: #7f8c8d;
+    color: var(--card-info-color);
     margin: 5px 0;
 }
