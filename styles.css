@@ -33,3 +33,10 @@ body {
     transform: translateY(-5px); /*negative moves up the y-axis*/
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.book-card img {
+    width: 100%; /*Image will take 100% of its container Div*/
+    height: 300px; /*fixed height for all book-card images, for professionalism*/
+    object-fit: cover; /*Ensures the image fits the container while preserving aspect ratio and cropped it where necessary for no empty spaces*/
+    border-bottom: 1px solid #ddd; /*to seperate the image form the rest of the card, for image to stand out*/
+}
