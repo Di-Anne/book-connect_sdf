@@ -15,14 +15,14 @@
 /*Media query that enables user to change system preference theme to dark mode with pure CSS*/
 @media (prefers-color-scheme: dark){  
     :root {
-    --grid-background: #202020;
-    --card-background: #414141;
+    --grid-background:#414141;
+    --card-background: #202020;
     --card-border-color: #202020;
     --box-shadow: rgba(255, 255, 255, 0.1);
     --body-text-color: #fff;
     --card-title-color: #5dadfc;
     --card-author-color: #8e44ad;
-    --card-info-color: #97a7a9;
+    --card-info-color: #7f8c8d;
     }
 }
 
