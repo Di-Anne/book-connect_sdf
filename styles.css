@@ -10,6 +10,7 @@
     --card-background-two: rgb(246, 232, 247);
     --card-border-color: #ddd;
     --box-shadow: rgba(0, 0, 0, 0.1);
+    --card-competition-notice-background: rgb(195, 52, 13);
     --card-new-background: rgb(255, 0, 0);
     --card-out-of-stock-background: rgb(0, 0, 255);
     --card-absolute-text-color: #fff;
@@ -42,12 +43,54 @@ body {
     color: var(--body-text-color);
 }
 
+.competition-notice {
+    border-radius: 15px;
+    background: var(--card-competition-notice-background);
+    color: var(--card-absolute-text-color);
+    width: 200px;
+    padding: 15px;
+    position: fixed;
+    top: 420px;
+    left: 0px;
+    z-index: 5;
+    opacity: 0.8;
+}
+
+.background-img-1 {
+    background-image: url(https://i.pinimg.com/736x/67/18/22/671822c2f63dd5f65d8fd15c9710420b.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 1300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: clip-path 1s ease;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.background-img-1:hover {
+    clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+}
+
+.background-img-2 {
+    background-image: url(https://www.shutterstock.com/image-photo/stack-old-books-flying-book-600nw-2311196889.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 1300px;
+}
+
 .top-rated {
     display: flex;
     text-align: center;
     flex-direction: column;
     width: 1300px;
     padding: 20px;
+}
+
+.top-rated > h1 {
+    margin-top: 0;
 }
 
 .top-rated ul {
@@ -61,6 +104,7 @@ body {
 
 .top-rated ul li {
     padding-bottom: 4px;
+    font-weight: 600;
 }
 
 .top-rated ul li::marker {
