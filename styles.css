@@ -18,6 +18,7 @@
     --card-author-color: #8e44ad;
     --card-info-color: #7f8c8d;
     --card-button-background: rgb(84, 125, 239);
+    --card-button-hover-background: rgb(13, 47, 102);
 }
 
 /****** Media query that enables user to change system preference theme to dark mode with pure CSS ******/
@@ -35,6 +36,11 @@
     }
 }*/
 
+.menu {
+    display: flex;
+}
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -50,7 +56,7 @@ body {
     width: 200px;
     padding: 15px;
     position: fixed;
-    top: 420px;
+    top: 500px;
     left: 0px;
     z-index: 5;
     opacity: 0.8;
@@ -81,7 +87,7 @@ body {
     height: 400px;
     width: 1300px;
     position: absolute;
-    top: 0;
+    top: 80px;
     left: 0;
     transition: clip-path 1s ease;
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
@@ -163,7 +169,7 @@ body {
     background-color: var(--card-new-background);
     color: var(--card-absolute-text-color);
     width: 100px;
-    padding: 5px;
+    padding: 0.5em;
     position: absolute;
     top: 30px;
     z-index: 1;
@@ -175,7 +181,7 @@ body {
     background-color: var(--card-out-of-stock-background);
     color: var(--card-absolute-text-color);
     width: 100px;
-    padding: 5px;
+    padding: 0.5em;
     position: absolute;
     top: 30px;
     z-index: 1;
@@ -222,7 +228,7 @@ body {
 .book-button:hover {
     cursor: pointer;
     color: var(--card-button-background);
-    background: rgb(13, 47, 102);
+    background: var(--card-button-hover-background);
 }
 
 .book-grid > .book-card:nth-child(2n) {
