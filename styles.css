@@ -38,6 +38,33 @@ body {
     color: var(--body-text-color);
 }
 
+.top-rated {
+    border: 1px solid black;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 1300px;
+    padding: 20px;
+}
+
+.top-rated ul {
+    border: 1px solid black;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 100px;
+}
+
+.top-rated ul li {
+    padding-bottom: 3px;
+}
+
+.top-rated ul li::marker {
+    content: "📚";
+}
+
 .book-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -98,3 +125,4 @@ body {
     border-radius: 5px;
     padding: 1em 2em;
 }
+
