@@ -3,12 +3,13 @@
 }
 
 :root {
+    --body-text-color: #333;
     --border-radius: 8px;
     --grid-background: #f0f8ff;
     --card-background: #ffffff;
+    --card-background-two: rgb(246, 232, 247);
     --card-border-color: #ddd;
     --box-shadow: rgba(0, 0, 0, 0.1);
-    --body-text-color: #333;
     --card-title-color: #2c3e50;
     --card-author-color: #8e44ad;
     --card-info-color: #7f8c8d;
@@ -19,11 +20,11 @@
 
 /*@media (prefers-color-scheme: dark){  
     :root {
-    --grid-background:#414141;
+    --grid-background:#636161;
     --card-background: #202020;
+    --card-background-two: rgb(62, 62, 62);
     --card-border-color: #202020;
     --box-shadow: rgba(255, 255, 255, 0.1);
-    --body-text-color: #fff;
     --card-title-color: #5dadfc;
     --card-author-color: #8e44ad;
     --card-info-color: #7f8c8d;
@@ -39,7 +40,6 @@ body {
 }
 
 .top-rated {
-    border: 1px solid black;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -48,7 +48,6 @@ body {
 }
 
 .top-rated ul {
-    border: 1px solid black;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -58,7 +57,7 @@ body {
 }
 
 .top-rated ul li {
-    padding-bottom: 3px;
+    padding-bottom: 4px;
 }
 
 .top-rated ul li::marker {
@@ -126,3 +125,6 @@ body {
     padding: 1em 2em;
 }
 
+.book-grid > .book-card:nth-child(2n) {
+ background: var(--card-background-two);
+}
