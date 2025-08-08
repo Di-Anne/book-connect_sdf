@@ -20,7 +20,7 @@
     --card-button-background: rgb(81, 121, 232);
 }
 
-/***Media query that enables user to change system preference theme to dark mode with pure CSS***/
+/****** Media query that enables user to change system preference theme to dark mode with pure CSS ******/
 
 /*@media (prefers-color-scheme: dark){  
     :root {
@@ -54,6 +54,24 @@ body {
     left: 0px;
     z-index: 5;
     opacity: 0.8;
+    animation: competition-notice-animation 3s 3;
+}
+
+@keyframes competition-notice-animation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-45deg) transform: translate(100px, 50%);
+        height: 200px;
+        width: 300px;
+        font-size: 30px;
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .background-img-1 {
@@ -172,7 +190,7 @@ body {
 }
 
 .out-of-stock-img {
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
 .book-card .book-title {
