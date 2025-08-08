@@ -98,7 +98,7 @@ body {
     }
 
     25% {
-        transform: rotate(-45deg) transform: translate(100px, 50%);
+        transform: rotate(-45deg) translate(100px, 50%);
         height: 200px;
         width: 300px;
         font-size: 30px;
