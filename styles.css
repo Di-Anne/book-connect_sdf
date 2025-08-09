@@ -38,12 +38,15 @@
 }*/
 
 .menu-bar { /*How can I change font settings to poppins?*/
+    letter-spacing: 3px;
+    padding-left: 1em;
     color: var(--card-background);
     background: var(--menu-background);
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    position: sticky;
-    top: 0px; /*How can I make my menu-bar scroll with me?*/
+    position: fixed; /*How can I make my menu-bar scroll with me? Position: fixed;*/
+    top: 0px; 
     z-index: 6;
 }
 
@@ -130,6 +133,7 @@ body {
     background-image: url(https://www.shutterstock.com/image-photo/stack-old-books-flying-book-600nw-2311196889.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 80px;
     height: 400px;
     width: 1300px;
 }
