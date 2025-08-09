@@ -86,7 +86,7 @@ body {
     border-radius: 15px;
     background: var(--card-competition-notice-background);
     color: var(--card-absolute-text-color);
-    width: 200px;
+    width: 150px;
     padding: 15px;
     position: fixed;
     top: 500px;
@@ -271,8 +271,20 @@ body {
 
 /******* Media Queries *******/
 
-@media (max-width: 700px){
+@media (max-width: 500px){
+    .menu-bar {
+        flex-direction: column;
+    }
 
+    .menu-items-container {
+        width: 100%;
+    }
 
-  
+    .menu-item-search {
+        width: 50%;
+    }
+
+    .menu-item {
+        width: 25%;
+    }
 }
