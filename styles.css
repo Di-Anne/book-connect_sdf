@@ -271,7 +271,7 @@ body {
 
 /******* Media Queries *******/
 
-@media (max-width: 500px){
+@media (max-width: 750px){
     .menu-bar {
         flex-direction: column;
     }
@@ -286,5 +286,12 @@ body {
 
     .menu-item {
         width: 25%;
+    }
+    .background-img-1 {
+        display: none; /*Remove first image with its hover effect on mobile screens*/
+    }
+
+    .competition-notice {
+        display: none; /*Remove competition orange notice with its animation on mobile screens*/
     }
 }
