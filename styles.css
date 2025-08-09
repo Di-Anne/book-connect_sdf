@@ -37,8 +37,9 @@
     }
 }*/
 
-.menu-bar { /*How can I change font settings to poppins?*/
-    letter-spacing: 3px;
+.menu-bar { /*How can I change font settings to poppins? fonts.google.com*/
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 4px;
     padding-left: 1em;
     color: var(--card-background);
     background: var(--menu-background);
@@ -117,7 +118,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
-    width: 1300px;
+    width: 100%;
     position: absolute;
     top: 80px;
     left: 0;
@@ -135,14 +136,14 @@ body {
     background-repeat: no-repeat;
     margin-top: 80px;
     height: 400px;
-    width: 1300px;
+    width: 100%;
 }
 
 .top-rated {
     display: flex;
     text-align: center;
     flex-direction: column;
-    width: 1300px;
+    width: 100%;
     padding: 20px;
 }
 
@@ -266,4 +267,12 @@ body {
 
 .book-grid > .book-card:nth-child(2n) {
  background: var(--card-background-two);
+}
+
+/******* Media Queries *******/
+
+@media (max-width: 700px){
+
+
+  
 }
