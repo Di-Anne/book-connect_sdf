@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet"> <!--Linking tailwind.html file to output.css file which has no vanilla css. 
+    This allows for the use of tailwind CSS in this tailwind.html file-->
+    <title>Book Connect</title>
+</head>
+<body class="font-serif p-0 m-0 bg-white text-gray-900">
+    <header>
+        <div class="menu-bar">
+            <h1 class="menu-title">Book Connect</h1>
+            <div class="menu-items-container">
+                <input class="menu-item-search" type="text" placeholder="Search...">
+                <input class="menu-item" type="text">
+                <input class="menu-item" type="text">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <div class="background-img-1"></div>
+            <div class="background-img-2"></div>
+        </div>
+        <div class="competition-notice">
+            <p>We have a competition coming up! Click here for more information!</p>
+        </div>
+        <div class="top-rated">
+            <h1>Top Rated Books:</h1>
+            <ul>
+                <li>The Catcher in the Rye</li>
+                <li>Life without Principle</li>
+                <li>Dostoevsky: The Years of Ordeal, 1850-1859</li>
+            </ul>
+        </div>
+        <section>
+            <div class="grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] gap-5 p-5 max-w-6xl my-0 mx-auto bg-gray-100 shadow-md"> <!--book-grid class-->
+                <div class="w-64 bg-gray-300 rounded-lg overflow-hidden text-center shadow-md p-4 hover:-translate-y-1 hover:shadow-md"> <!--book-card class-->
+                    <div class="new">I'm New!</div>
+                    <img src="https://www.penguinrandomhouse.co.za/sites/penguinbooks.co.za/files/styles/jacket-large/public/cover/9780552169592.jpg?itok=60qkk2Zh"
+                        alt="Inferno book cover"
+                        class="w-64">
+                    <h2 class="book-title">Inferno</h2>
+                    <div class="book-author">By: Dan Brown</div>
+                    <div class="book-info">Popularity: 38673</div>
+                    <div class="book-info">Published: May 13, 2013</div>
+                    <button class="book-button">View Details</button>
+                </div>
+                <div class="book-card">
+                    <img src="https://m.media-amazon.com/images/I/81YVFG8dWzL.jpg"
+                        alt="Allegiant book cover"
+                        class="w-64">
+                    <h2 class="book-title">Allegiant</h2>
+                    <div class="book-author">By: Veronica Roth</div>
+                    <div class="book-info">Popularity: 69258</div>
+                    <div class="book-info">Published: October 21, 2013</div>
+                    <button class="book-button">View Details</button>
+                </div>
+                <div class="book-card">
+                    <img src="https://m.media-amazon.com/images/I/81ZIEJ2wpXL._UF1000,1000_QL80_.jpg"
+                        alt="Lettre à un otage book cover">
+                    <h2 class="book-title">Lettre à un otage</h2>
+                    <div class="book-author">By: Antoine de Saint-Exupéry</div>
+                    <div class="book-info">Popularity: 129</div>
+                    <div class="book-info">Published: December 31, 1943</div>
+                    <button class="book-button">View Details</button>
+                </div>
+                <div class="book-card">
+                    <div class="new">I'm New!</div>
+                    <img src="https://m.media-amazon.com/images/I/51+mKPID-GL._UF1000,1000_QL80_.jpg"
+                        alt="Life without principle book cover">
+                    <h2 class="book-title">Life without principle</h2>
+                    <div class="book-author">By: Henry David Thoreau</div>
+                    <div class="book-info">Popularity: 99</div>
+                    <div class="book-info">Published: December 31, 1862</div>
+                    <button class="book-button">View Details</button>
+                </div>
+                <div class="book-card">
+                    <div class="out-of-stock">Out of Stock</div>
+                    <img class="out-of-stock-img" src="https://m.media-amazon.com/images/I/81zeKRGCPpL.jpg"
+                        alt="Harry Potter and the Goblet of fire book cover">
+                    <h2 class="book-title">Harry Potter and the Goblet of Fire</h2>
+                    <div class="book-author">By: J.K. Rowling</div>
+                    <div class="book-info">Popularity: 61327</div>
+                    <div class="book-info">Published: July 7, 2000</div>
+                    <button class="book-button">View Details</button>
+                </div>
+                <div class="book-card">
+                    <img src="https://m.media-amazon.com/images/I/51uEKxRBCHL._SY780_.jpg"
+                        alt="The Catcher in the Rye book cover">
+                    <h2 class="book-title">The Catcher in the Rye</h2>
+                    <div class="book-author">By: J.D. Salinger</div>
+                    <div class="book-info">Popularity: 75615</div>
+                    <div class="book-info">Published: December 31, 1950</div>
+                    <button class="book-button">View Details</button>
+                </div>
+                <div class="book-card">
+                    <div class="new">I'm New!</div>
+                    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388488341i/18817.jpg"
+                        alt="Dostoevsky: The Years of Ordeal, 1850-1859 book cover">
+                    <h2 class="book-title">Dostoevsky: The Years of Ordeal, 1850-1859</h2>
+                    <div class="book-author">By: Joseph Frank</div>
+                    <div class="book-info">Popularity: 30</div>
+                    <div class="book-info">Published: November 30, 1983</div>
+                    <button class="book-button">View Details</button>
+                </div>
+                <div class="book-card">
+                    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348495562i/42891.jpg"
+                        alt="Journeys in English book cover">
+                    <h2 class="book-title">Journeys in English</h2>
+                    <div class="book-author">By: Bill Bryson</div>
+                    <div class="book-info">Popularity: 98</div>
+                    <div class="book-info">Published: December 31, 1996</div>
+                    <button class="book-button">View Details</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

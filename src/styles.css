@@ -37,6 +37,14 @@
     }
 }*/
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: var(--body-text-color);
+}
+
 .menu-bar { /*How can I change font settings to poppins? fonts.google.com*/
     font-family: "Poppins", sans-serif;
     letter-spacing: 4px;
@@ -72,14 +80,6 @@
 
 .menu-title::before {
     content:""  /*How can I add a book icon before the menu-title?*/
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: var(--body-text-color);
 }
 
 .competition-notice {
